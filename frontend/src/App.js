@@ -12,10 +12,13 @@ import '../node_modules/bootstrap-dark-5/dist/css/bootstrap-dark.min.css';
 import'../node_modules/bootstrap/dist/js/bootstrap.bundle';
 import'../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js';
 import Signup from './screens/Signup.js';
+import axios from 'axios'
 
 import { CartProvider } from './components/ContextReducer.js';
 import MyOrder from './screens/MyOrder.js';
 const App = () => {
+  axios.defaults.withCredentials = true;
+  axios.post('https://gofood-mern-api.vercel.app', {name, email, password})
   return (
     
     <CartProvider>
