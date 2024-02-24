@@ -8,7 +8,7 @@ const cors = require('cors')
 
 app.use(cors(
     {
-        origin: [""],
+        origin: ["https://gofood-mern.vercel.app"],
         methods: ["POST", "GET"],
         credentials: true
     }
