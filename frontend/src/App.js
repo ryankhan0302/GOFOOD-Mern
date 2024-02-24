@@ -18,7 +18,7 @@ import { CartProvider } from './components/ContextReducer.js';
 import MyOrder from './screens/MyOrder.js';
 const App = () => {
   axios.defaults.withCredentials = true;
-  axios.post('https://gofood-mern-api.vercel.app', {name, email, password})
+  axios.post('https://gofood-mern-api.vercel.app')
   return (
     
     <CartProvider>
